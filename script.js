@@ -4,9 +4,9 @@ const loveMessage = document.getElementById("loveMessage");
 const warning = document.getElementById("warning");
 
 yesBtn.addEventListener("click", () => {
-  loveMessage.classList.remove("hidden");
-  explodeHearts();
+  window.location.href = "verify.html";
 });
+
 
 noBtn.addEventListener("click", () => {
   warning.textContent = "🚨 PLEASE STOP CLICKING 😭 This is harmful for Nibu's health 🚨";
