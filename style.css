@@ -60,9 +60,15 @@ button:hover {
 }
 
 .warning {
-  margin-top: 10px;
-  color: #ffd1dc;
-  font-size: 0.9rem;
+  margin-top: 15px;
+  padding: 12px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #ff1744; /* bright red */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 23, 68, 0.8);
+  animation: shake 0.4s ease-in-out;
 }
 
 .hidden {
@@ -116,4 +122,11 @@ button:hover {
 }
 .photo {
   box-shadow: 0 10px 30px rgba(255, 0, 100, 0.4);
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
 }
