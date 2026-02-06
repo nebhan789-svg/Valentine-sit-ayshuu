@@ -165,3 +165,8 @@ button:hover {
   0% { transform: translate(0, 0) scale(1); opacity: 1; }
   100% { transform: translate(var(--x), var(--y)) scale(0.5); opacity: 0; }
 }
+#loveMessage {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding-right: 5px;
+}
